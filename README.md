@@ -1,4 +1,4 @@
-# RNA folding problem - Bioinformatic of RNA Project
+# Bioinformatic of RNA Project - RNA folding problem
 ## Compute an estimation of the Gibbs free energy
 
 
