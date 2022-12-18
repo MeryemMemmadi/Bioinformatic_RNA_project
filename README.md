@@ -7,7 +7,7 @@
 Clone the git in your computer
 
 ```bash
-$ git clone https://github.com/MeryemMemmadi/Bioinformatic_RNA_project.git
+$ git clone https://github.com/MeryemMemmadi/Bioinformatic_RNA_project
 ```
 
 Execute the program for the 4GXY.pdb
