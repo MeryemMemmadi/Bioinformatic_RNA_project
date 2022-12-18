@@ -2,6 +2,18 @@
 ## Compute an estimation of the Gibbs free energy
 
 
+### Execute Code
+
+Clone the git in your computer
+
+```bash
+$ git clone https://github.com/MeryemMemmadi/RNA_folding_problem.git
+```
+
+Execute the program for the 4GXY.pdb
+```bash
+$  python3 RNA_script3.py -f 4gxy.pdb
+```
 
 ### Guidelines
 For a given ribonucleotide chain, the RNA folding problem consists in finding the native fold
@@ -55,8 +67,11 @@ By summing all these scores, the script will calculate the estimated Gibbs free 
 ### Data
 The directory liste_pdb contains all the pdb used as a trainning set for the function that estimate the Gibbs free energy.
 The Downloaded PDB for which you want to compute the Gibbs free energy have to be in the same directory as the 3 scripts.
-You can get the PDB files on the [Protein Databank Website](https://www.rcsb.org/)
+You can get the PDB files on the [Protein Databank Website](https://www.rcsb.org/).
 
+
+---
+### Code
 
 #### Script 1 
 Execute the first script with python and give the directory where the PDB used as a trainnning set are stored.
@@ -72,6 +87,7 @@ Execute the second script on R to get the different plot of the scores
 ```bash
 $ python3 RNA_script2.py
 ```
+Generate as output 10 plot of the scores of each pair.
 
 #### Script 3 
 Execute the last script with python with the pdb file for which you want to estimate the Gibbs free energy, as an argument. 
