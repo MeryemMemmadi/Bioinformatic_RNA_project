@@ -47,7 +47,6 @@ def fill_dico(dico, d, l1,l2):      #fill the nested dictionnary with the count 
     if couple_r not in dico :       #verify if the pair (or its opposite) is one of the dictionnary's key 
         couple_r = l2[3]+l1[3]      # ex: if "UA" not in the keys we trandform it as "AU
     dico[couple_r][d] = dico[couple_r][d]+1
-    #print("pair :",couple_r, " dico_coupler :",dico[couple_r], " count  :",dico[couple_r][d])
 
     return dico
 
@@ -103,7 +102,6 @@ def main():
     dico_pair_r = create_dico()    
     parser = argparse.ArgumentParser()
     parser.add_argument("-path",type=dir_path,  help="file containning the trainning set of pdb")
-    #parser.add_argument('-filename',type =str, help="pdb file")
     args = parser.parse_args()
 
     dossier = os.listdir(args.path)           
@@ -111,7 +109,7 @@ def main():
 
     
     for pdb in dossier:                                  #search for pdb file
-        print(args.path+pdb)
+        print("Process file : ",args.path+pdb)
         with open(args.path+pdb,"r") as f1_in:       #open the pdb file
             for ligne_f1 in f1_in:
                 ligne_sep1 = sep_line(ligne_f1)                                                                                             #separate the line
