@@ -77,7 +77,7 @@ You can get the PDB files on the [Protein Databank Website](https://www.rcsb.org
 Execute the first script with python and give the directory where the PDB used as a trainnning set are stored.
 
 ```bash
-$ python3 RNA_script1.py liste_pdb/
+$ python3 RNA_script1.py -path liste_pdb/
 ```
 generate as an output 10 files (one for each pair) of 20 lines (1 line = 1 scoring value).
 
@@ -93,7 +93,7 @@ Generate as output 10 plot of the scores of each pair.
 Execute the last script with python with the pdb file for which you want to estimate the Gibbs free energy, as an argument. 
 
 ```bash
-$ python3 RNA_script3.py XXXX.pdb
+$ python3 RNA_script3.py -f XXXX.pdb
 ```
 
 
